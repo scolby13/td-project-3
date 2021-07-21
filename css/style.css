@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* =========================
+Element Styling
+============================ */
+
+h3,
+legend {
+    color: #28323C;
+}
+
+p,
+label,
+footer {
+    color: grey;
+}
+
+
+
+/* =========================
+Header Styling
+============================ */
+
+header {
+    background-color: #28323C;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+/* =========================
+Heading Styling
+============================ */
+
+.heading {
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-bottom: 4px solid #28323C;
+}
+
+/* =========================
+Form Styling
+============================ */
+
+legend {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+    margin-top: 25px;
+    padding: 0;
+}
+/* =========================
+Contact Info Styling
+============================ */
+
+.contact-wrapper,
+.newsletter-wrapper {
+    border-top: 2px solid #28323C;
+    margin: 5px 10px 0;
+}
+
+.contact-wrapper {
+    padding-bottom: 30px;
+    background-color: powderblue;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info label {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.contact-info input,
+.contact-info select,
+textarea {
+    background-color: #EDEEEF;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-info input,
+.contact-info select {
+    padding: 1em;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+.zip {
+    width: 25%;
+}
+
+/* =========================
+Newsletter Styling
+============================ */
+
+.newsletter-wrapper {
+    background-color: rgb(249, 207, 213);
+}
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.newsletter > div > * {
+    margin-bottom: 16px;
+    margin-left: 8px;
+}
+
+.newsletter label {
+    margin: 20px 0;
+}
+
+/* =========================
+Button Styling
+============================ */
+
+.btn {
+    width: 100%;
+    background-color: #45B2AC;
+    color: #fff;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+
+/* =========================
+Footer Styling
+============================ */
+
+footer {
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 36px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid green;
+    background-color: yellow;
+    transition: .5s ease-in-out;
+}
+
+/* =========================
+Media Queries
+============================ */
+
+@media screen and (min-width: 768px) {
+    .heading {
+        padding: 40px 0;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .contact-wrapper {
+        padding: 40px 0;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-info > * {
+        margin: 10px 0;
+    }
+
+    .contact-info .full,
+    .contact-info select {
+        flex: 75%;
+    } 
+
+    .contact-info label {
+        flex-basis: 25%;
+    }
+
+    .newsletter-wrapper {
+        padding: 25px 0;
+    }
+
+    .newsletter legend {
+        padding-bottom: 16px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 24px;
+    }
+    
+}
+
+   
