@@ -66,6 +66,7 @@ Contact Info Styling
 .newsletter-wrapper {
     border-top: 2px solid #28323C;
     margin: 5px 10px 0;
+    padding: 10px;
 }
 
 .contact-wrapper {
@@ -151,12 +152,22 @@ footer {
     padding-bottom: 36px;
 }
 
+/* =========================
+Other Styling
+============================ */
+
+input,
+select,
+textarea {
+    transition: .5s;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
     border: 2px solid green;
     background-color: yellow;
-    transition: .5s ease-in-out;
+    transition: .5s;
 }
 
 /* =========================
@@ -178,7 +189,7 @@ Media Queries
     }
 
     .contact-wrapper {
-        padding: 40px 0;
+        padding: 40px 10px;
     }
 
     .contact-info {
@@ -200,7 +211,7 @@ Media Queries
     }
 
     .newsletter-wrapper {
-        padding: 25px 0;
+        padding: 25px 10px;
     }
 
     .newsletter legend {
