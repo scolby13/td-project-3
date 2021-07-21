@@ -101,8 +101,12 @@ textarea {
     text-align: right;
 }
 
+textarea::placeholder {
+    text-align: left;
+}
+
 .zip {
-    width: 25%;
+    width: 50%;
 }
 
 /* =========================
@@ -208,6 +212,10 @@ Media Queries
 
     .contact-info label {
         flex-basis: 25%;
+    }
+
+    .zip {
+        width: 25%;
     }
 
     .newsletter-wrapper {
